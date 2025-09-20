@@ -1,0 +1,69 @@
+{
+  "name": "@nanovm/desktop",
+  "version": "2.0.0",
+  "license": "MIT",
+  "description": "NanoVM Desktop Sandbox - isolated cloud environment with a desktop-like interface powered by NanoVM. Ready for AI Computer Use",
+  "author": {
+    "name": "FoundryLabs, Inc.",
+    "email": "supriyo@nanovm.dev",
+    "url": "https://nanovm.dev"
+  },
+  "keywords": [
+    "nanovm",
+    "ai-agents",
+    "agents",
+    "ai",
+    "computer-use",
+    "sandbox",
+    "code",
+    "runtime",
+    "vm"
+  ],
+  "bugs": "https://github.com/sonite-ai/desktop/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonite-ai/desktop",
+    "directory": "packages/js-sdk"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "pnpm build",
+    "build": "tsc --noEmit && tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run --disable-console-intercept",
+    "example": "npx tsx example.mts",
+    "generate-ref": "./scripts/generate_sdk_ref.sh",
+    "lint": "eslint src/ tests/",
+    "format": "prettier --write src/ tests/ example.mts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "dotenv": "^16.4.5",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typedoc": "0.26.8",
+    "typedoc-plugin-markdown": "4.2.7",
+    "typescript": "^5.6.3",
+    "vitest": "^3.0.5"
+  },
+  "dependencies": {
+    "nanovm": "^2.0.0"
+  }
+}
