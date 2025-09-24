@@ -1,1 +1,1 @@
-FROM nanovm/desktop:latest
+FROM nanovmdev/desktop:latest
