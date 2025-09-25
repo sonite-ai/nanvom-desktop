@@ -4,7 +4,7 @@ NanoVM Desktop Sandbox is a secure virtual desktop ready for Computer Use. Power
 
 Each sandbox is isolated from the others and can be customized with any dependencies you want.
 
-![Desktop Sandbox](../../readme-assets/screenshot.png)
+<!-- ![Desktop Sandbox](../../readme-assets/screenshot.png) -->
 
 ## Examples
 

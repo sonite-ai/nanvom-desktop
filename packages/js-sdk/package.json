@@ -1,10 +1,10 @@
 {
   "name": "@nanovm/desktop",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "NanoVM Desktop Sandbox - isolated cloud environment with a desktop-like interface powered by NanoVM. Ready for AI Computer Use",
   "author": {
-    "name": "FoundryLabs, Inc.",
+    "name": "NanoVM",
     "email": "supriyo@nanovm.dev",
     "url": "https://nanovm.dev"
   },
@@ -64,6 +64,6 @@
     "vitest": "^3.0.5"
   },
   "dependencies": {
-    "nanovm": "^2.0.0"
+    "e2b": "^2.0.0"
   }
 }

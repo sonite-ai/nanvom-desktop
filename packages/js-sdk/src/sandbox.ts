@@ -6,7 +6,7 @@ import {
   CommandResult,
   CommandExitError,
   TimeoutError,
-} from 'nanovm'
+} from 'e2b'
 
 import { generateRandomString } from './utils'
 
